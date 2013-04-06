@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>forms</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="../../webfont/elusive-icons/css/elusive-webfont.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lte IE 8]><script src="/wp-content/themes/html5.theme/common/js/html5.js" type="text/javascript"></script><![endif]-->
+</head>
+<body>
+	<header class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a href="#" title="Project name" class="brand"><i class="icon-globe-alt"></i> Project name</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav pull-right">
+						<li><a href="#" title="Sign in"><i class="icon-white icon-off"></i> Sign in</a></li>
+						<li class="dropdown">
+							<a href="#" title="Settings" data-toggle="dropdown"><i class="icon-cog icon-white"></i> Settings</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting item A</a></li>
+								<li><a href="#">Setting item B</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="Settings" data-toggle="dropdown"><i class="icon-white icon-user"></i> Naoki Yamda</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">Other item</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="page-content">
+		<h1>Forms <small>demo</small></h1>
+		<form action="#" method="post" class="form-horizontal">
+			<fieldset>
+				<legend>Legend</legend>
+				<div class="control-group">
+					<label class="control-label">Text input</label>
+					<div class="controls">
+						<input type="text" name="" value="" placeholder="Input text here..." />
+						<span class="help-inline">Inline help text</span>
+						<span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Text input & Button</label>
+					<div class="controls">
+						<div class="input-prepend">
+							<div class="btn-group">
+								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li><a href="#" title="action">Action</a></li>
+									<li><a href="#" title="another action">Action</a></li>
+									<li class="divider"></li>
+									<li><a href="#" title="separated link">Separated link</a></li>
+								</ul>
+							</div>
+							<input type="text" name="" value="" placeholder="Input text here..." />
+						</div>
+						<div class="input-append">
+							<input type="text" name="" value="" placeholder="input..." />
+							<div class="btn-group">
+								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li><a href="#" title="action">Action</a></li>
+									<li><a href="#" title="another action">Action</a></li>
+									<li class="divider"></li>
+									<li><a href="#" title="separated link">Separated link</a></li>
+								</ul>
+							</div>
+						</div>
+						<p class="help-block">HTML5 text-based input.</p>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Checkbox</label>
+					<div class="controls">
+						<label class="checkbox">
+							<input type="checkbox" name="" value=""> Option one is this and that
+						</label>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Radio button</label>
+					<div class="controls">
+						<label class="radio">
+							<input type="radio" name="radio" value="a" checked> Radio item A
+						</label>
+						<label class="radio">
+							<input type="radio" name="radio" value="b"> Radio item B
+						</label>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Select</label>
+					<div class="controls">
+						<select name="">
+							<option value="">select item...</option>
+							<optgroup label="group1">
+								<option value="">item A</option>}
+								<option value="">item B</option>}
+							</optgroup>
+							<option>item C</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Select - multiple</label>
+					<div class="controls">
+						<select multiple>
+							<option value="a">item A</option>}
+							<option value="b">item B</option>}
+							<option>item C</option>
+							<option>item D</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">File input</label>
+					<div class="controls">
+						<input type="file" name="" value="" placeholder="hogehoge.txt">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Textarea</label>
+					<div class="controls">
+						<textarea rows="4" placeholder="Input text here..."></textarea>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary">Save chenged</button>
+				<button type="reset" class="btn">Reset</button>
+			</div>
+		</form>
+	</section>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

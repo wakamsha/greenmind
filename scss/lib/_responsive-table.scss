@@ -1,0 +1,51 @@
+//
+// Responsive: Tables
+// --------------------------------------------------
+
+
+@media (max-width: 767px) {
+
+  .table-responsive {
+    display: block;
+    position: relative;
+
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+
+    thead {
+      float: left;
+
+      tr {
+        th,
+        td {
+          text-align: right;
+        }
+      }
+    }
+
+    tbody {
+      overflow-x: auto;
+      position: relative;
+      white-space: nowrap;
+      width: auto;
+
+      tr {
+        display: inline-block;
+        vertical-align: top;
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+

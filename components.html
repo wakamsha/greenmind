@@ -1,0 +1,1870 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Components</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="content/font/elusive-icons/css/elusive-webfont.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lte IE 8]><script src="/wp-content/themes/html5.theme/common/js/html5.js" type="text/javascript"></script><![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"><i class="icon-list"></i></button>
+				<a href="index.html" title="Green mind | Bootstrap" class="brand"><i class="icon-leaf"></i> Green mind</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav nav-pills pull-right">
+						<li><a href="#" title="Sign in"><i class="icon-white icon-off"></i> Sign in</a></li>
+						<li class="dropdown">
+							<a href="#" title="Settings" data-toggle="dropdown"><i class="icon-cog icon-white"></i> Settings</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting item A</a></li>
+								<li><a href="#">Setting item B</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="Settings" data-toggle="dropdown"><i class="icon-white icon-user"></i> Naoki Yamda</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">Other item</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header class="jumbotron">
+		<div class="jumbotron-inner">
+			<h1>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="">Components <i class="caret icon-chevron-down"></i></a>
+				<ul class="dropdown-menu">
+					<li><a tabindex="-1" href="listview.html">List views</a></li>
+					<li><a tabindex="-1" href="tables.html">Responsive tables</a></li>
+					<li><a tabindex="-1" href="images.html">Images</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="scaffolding.html">Bootstrap Scaffolding</a></li>
+					<li><a tabindex="-1" href="base-css.html">Bootstrap Base CSS</a></li>
+					<li><a tabindex="-1" href="components.html">Bootstrap Components</a></li>
+					<li><a tabindex="-1" href="javascript.html">Bootstrap JavaDcript</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="index.html">Home</a></li>
+				</ul>
+			</h1>
+			<p class="lead"><i class="icon-ok-sign"></i> Dozens of reusable components built to provide navigation, alerts, popovers, and more.</p>
+		</div>
+	</header>
+
+	<div class="page-container">
+
+		<ul class="nav nav-list bs-doc-sidenav">
+			<li><a href="#dropdowns">Dropdowns<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#buttonGroups">Button groups<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#buttonDropdowns">Button dropdowns<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#navs">Navs<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#navbar">Navbar<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#breadcrumbs">Breadcrumbs<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#pagination">Pagination<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#labels">Labels<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#typography">Typography<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#thumbnails">Thumbnails<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#alerts">Alerts<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#progress">Progress bars<i class="icon-chevron-right pull-right"></i></a></li>
+			<li><a href="#media">Media object<i class="icon-chevron-right pull-right"></i></a></li>
+		</ul>
+
+
+		<section class="page-content">
+
+			<!-- Dropdowns
+			================================================== -->
+			<section id="dropdowns" class="section-doc">
+				<header class="page-header">
+					<h1>Dropdown menus</h1>
+				</header>
+
+				<h2>Example</h2>
+				<p>Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="./javascript.html#dropdowns">dropdown JavaScript plugin</a>.</p>
+				<div class="bs-doc-example bs-doc-example-submenus">
+					<div class="dropdown">
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li><a tabindex="-1" href="#">Action</a></li>
+							<li><a tabindex="-1" href="#">Another action</a></li>
+							<li><a tabindex="-1" href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" href="#">Separated link</a></li>
+						</ul>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+				<h2>Markup</h2>
+				<p>Looking at just the dropdown menu, here's the required HTML. You need to wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then just create the menu.</p>
+<pre class="prettyprint linenums">
+&lt;div class="dropdown"&gt;
+  &lt;!-- Link or button to toggle dropdown --&gt;
+  &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
+    &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+				<h2>Options</h2>
+				<p>Align menus to the right and add include additional levels of dropdowns.</p>
+
+				<h3>Aligning the menus</h3>
+				<p>Add <code>.pull-right</code> to a <code>.dropdown-menu</code> to right align the dropdown menu.</p>
+	<pre class="prettyprint linenums">
+	&lt;ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel"&gt;
+	  ...
+	&lt;/ul&gt;
+	</pre>
+
+				<h3>Disabled menu options</h3>
+				<p>Add <code>.disabled</code> to a <code>&lt;li&gt;</code> in the dropdown to disable the link.</p>
+				<div class="bs-doc-example bs-doc-example-submenus">
+					<div class="dropdown">
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li><a tabindex="-1" href="#">Regular link</a></li>
+							<li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+							<li><a tabindex="-1" href="#">Another link</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" href="#">Separated link</a></li>
+						</ul>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Regular link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="disabled"&gt;&lt;a tabindex="-1" href="#"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a tabindex="-1" href="#"&gt;Another link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+				<h3>Sub menus on dropdowns</h3>
+				<p>Add an extra level of dropdown menus, appearing on hover like those of OS X, with some simple markup additions. Add <code>.dropdown-submenu</code> to any <code>li</code> in an existing dropdown menu for automatic styling.</p>
+				<div class="bs-doc-example bs-doc-example-submenus">
+					<div class="pull-left">
+						<p class="muted">Default</p>
+						<div class="dropdown clearfix">
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li><a tabindex="-1" href="#">Regular link</a></li>
+								<li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+								<li><a tabindex="-1" href="#">Another link</a></li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">More options</a>
+									<ul class="dropdown-menu">
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="pull-left">
+						<p class="muted">Dropup</p>
+						<div class="dropup">
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li><a tabindex="-1" href="#">Regular link</a></li>
+								<li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+								<li><a tabindex="-1" href="#">Another link</a></li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">More options</a>
+									<ul class="dropdown-menu">
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="pull-left">
+						<p class="muted">Left submenu</p>
+						<div class="dropdown">
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li><a tabindex="-1" href="#">Regular link</a></li>
+								<li class="disabled"><a tabindex="-1" href="#">Disabled link</a></li>
+								<li><a tabindex="-1" href="#">Another link</a></li>
+								<li class="dropdown-submenu pull-left">
+									<a tabindex="-1" href="#">More options</a>
+									<ul class="dropdown-menu">
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+										<li><a tabindex="-1" href="#">Second level link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
+  ...
+  &lt;li class="dropdown-submenu"&gt;
+    &lt;a tabindex="-1" href="#"&gt;More options&lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+			</section>
+
+
+			<!-- Button groups
+			================================================== -->
+			<section id="buttonGroups" class="section-doc">
+				<header class="page-header">
+					<h1>Button groups <small>demo</small></h1>
+				</header>
+
+
+				<h2>Examples</h2>
+				<p>Two basic options, along with two more specific variations.</p>
+
+				<h3>Single button group</h3>
+				<p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+				<div class="bs-doc-example">
+					<div class="btn-group">
+						<button class="btn"><i class="icon-home"></i></button>
+						<button class="btn"><i class="icon-bookmark"></i></button>
+						<button class="btn"><i class="icon-phone"></i></button>
+						<button class="btn"><i class="icon-compass"></i></button>
+						<button class="btn"><i class="icon-envelope"></i></button>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+	&lt;button class="btn"&gt; ... &lt;/button&gt;
+	&lt;button class="btn"&gt; ... &lt;/button&gt;
+	...
+&lt;/div&gt;
+</pre>
+
+				<h3>Multiple button groups</h3>
+				<p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
+				<div class="bs-doc-example">
+					<div class="btn-toolbar">
+						<div class="btn-group">
+							<button class="btn"><i class="icon-home"></i></button>
+							<button class="btn"><i class="icon-bookmark"></i></button>
+							<button class="btn"><i class="icon-phone"></i></button>
+						</div>
+						<div class="btn-group">
+							<button class="btn"><i class="icon-home"></i></button>
+							<button class="btn"><i class="icon-bookmark"></i></button>
+							<button class="btn"><i class="icon-phone"></i></button>
+						</div>
+						<div class="btn-group">
+							<button class="btn btn-large"><i class="icon-home"></i></button>
+							<button class="btn btn-large"><i class="icon-home"></i></button>
+							<button class="btn btn-large"><i class="icon-home"></i></button>
+						</div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-toolbar"&gt;
+	&lt;div class="btn-group"&gt;
+		&lt;button class="btn"&gt; ... &lt;/button&gt;
+		...
+	&lt;/div&gt;
+	&lt;div class="btn-group"&gt;
+		&lt;button class="btn"&gt; ... &lt;/button&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<h3>Vertical button groups</h3>
+				<p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
+				<div class="bs-doc-example">
+					<div class="btn-group btn-group-vertical">
+						<button class="btn"><i class="icon-home"></i></button>
+						<button class="btn"><i class="icon-bookmark"></i></button>
+						<button class="btn"><i class="icon-phone"></i></button>
+						<button class="btn"><i class="icon-compass"></i></button>
+						<button class="btn"><i class="icon-envelope"></i></button>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group btn-group-vertical"&gt;
+	&lt;button class="btn"&gt; ... &lt;/button&gt;
+	&lt;button class="btn"&gt; ... &lt;/button&gt;
+	...
+&lt;/div&gt;
+</pre>
+
+			</section>
+
+
+			<!-- Button dropdown menus
+			================================================== -->
+			<section id="buttonDropdowns" class="section-doc">
+				<header class="page-header">
+					<h1>Button dropdown menus</h1>
+				</header>
+
+				<h2>Overview and examples</h2>
+				<p>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
+				<div class="bs-doc-example">
+					<div class="btn-toolbar">
+						<div class="btn-group">
+							<button class="btn dropdown-toggle" data-toggle="dropdown">Action <i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+ &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+   Action
+   &lt;i class="caret icon-chevron-down"&gt;&lt;/i&gt;
+ &lt;/a&gt;
+ &lt;ul class="dropdown-menu"&gt;
+   &lt;!-- dropdown menu links --&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+				<h3>Works with all button sizes</h3>
+				<p>Button dropdowns work at any size:  <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code>.</p>
+				<div class="bs-doc-example">
+					<div class="btn-toolbar">
+						<div class="btn-group">
+							<button class="btn btn-large dropdown-toggle" data-toggle="dropdown">Large button <i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-small dropdown-toggle" data-toggle="dropdown">Small button <i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">Mini button <i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+					</div>
+				</div>
+
+				<h3>Requires JavaScript</h3>
+				<p>Button dropdowns require the <a href="./javascript.html#dropdowns">Bootstrap dropdown plugin</a> to function.</p>
+				<p>In some cases—like mobile—dropdown menus will extend outside the viewport. You need to resolve the alignment manually or with custom JavaScript.</p>
+
+				<hr />
+
+
+				<h2>Split button dropdowns</h2>
+				<p>Building on the button group styles and markup, we can easily create a split button. Split buttons feature a standard action on the left and a dropdown toggle on the right with contextual links.</p>
+				<div class="bs-doc-example">
+					<div class="btn-toolbar" style="margin: 0;">
+						<div class="btn-group">
+							<button class="btn">Action</button>
+							<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-primary">Action</button>
+							<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-danger">Danger</button>
+							<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-warning">Warning</button>
+							<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-success">Success</button>
+							<button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-info">Info</button>
+							<button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+ &lt;button class="btn"&gt;Action&lt;/button&gt;
+ &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
+   &lt;i class="caret  icon-chevron-down"&gt;&lt;/i&gt;
+ &lt;/button&gt;
+ &lt;ul class="dropdown-menu"&gt;
+   &lt;!-- dropdown menu links --&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+				<h3>Sizes</h3>
+				<p>Utilize the extra button classes <code>.btn-mini</code>, <code>.btn-small</code>, or <code>.btn-large</code> for sizing.</p>
+				<div class="bs-doc-example">
+					<div class="btn-toolbar">
+						<div class="btn-group">
+							<button class="btn btn-large">Large action</button>
+							<button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-small">Small action</button>
+							<button class="btn btn-small dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group">
+							<button class="btn btn-mini">Mini action</button>
+							<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-down"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+					</div><!-- /btn-toolbar -->
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group"&gt;
+	&lt;button class="btn btn-large"&gt;Large action&lt;/button&gt;
+	&lt;button class="btn btn-large dropdown-toggle" data-toggle="dropdown"&gt;
+		&lt;i class="caret icon-chevron-down"&gt;&lt;/i&gt;
+	&lt;/button&gt;
+	&lt;ul class="dropdown-menu"&gt;
+		&lt;!-- dropdown menu links --&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+				<h3>Dropup menus</h3>
+				<p>Dropdown menus can also be toggled from the bottom up by adding a single class to the immediate parent of <code>.dropdown-menu</code>. It will flip the direction of the <code>.caret</code> and reposition the menu itself to move from the bottom up instead of top down.</p>
+				<div class="bs-doc-example">
+					<div class="btn-toolbar">
+						<div class="btn-group dropup">
+							<button class="btn">Dropup</button>
+							<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-up"></i></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<div class="btn-group dropup">
+							<button class="btn primary">Right dropup</button>
+							<button class="btn primary dropdown-toggle" data-toggle="dropdown"><i class="caret icon-chevron-up"></i></button>
+							<ul class="dropdown-menu pull-right">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="btn-group dropup"&gt;
+	&lt;button class="btn btn-large"&gt;Large action&lt;/button&gt;
+	&lt;button class="btn btn-large dropdown-toggle" data-toggle="dropdown"&gt;
+		&lt;i class="caret icon-chevron-up"&gt;&lt;/i&gt;
+	&lt;/button&gt;
+	&lt;ul class="dropdown-menu"&gt;
+		&lt;!-- dropdown menu links --&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+			</section>
+
+
+			<!-- Nav, Tabs, & Pills
+			================================================== -->
+			<section id="navs" class="section-doc">
+				<header class="page-header">
+					<h1>Nav <small>tabs, pills, and lists</small></h1>
+				</header>
+				<h2>Lightweight defaults <small>Same markup, different classes</small></h2>
+				<p>All nav components here—tabs, pills, and lists—<strong>share the same base markup and styles</strong> through the <code>.nav</code> class.</p>
+				<h3>Basic tabs</h3>
+				<p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
+				<div class="bs-doc-example">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#" title="">Home</a>
+						</li>
+						<li>
+							<a href="#" title="">Profile</a>
+						</li>
+						<li>
+							<a href="#" title="">Messages</a>
+						</li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-tabs"&gt;
+ &lt;li class="active"&gt;
+   &lt;a href="#"&gt;Home&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+				<h3>Basic pills</h3>
+				<p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+				<div class="bs-doc-example">
+					<ul class="nav nav-pills">
+						<li class="active">
+							<a href="#" title="">Home</a>
+						</li>
+						<li>
+							<a href="#" title="">Profile</a>
+						</li>
+						<li>
+							<a href="#" title="">Messages</a>
+						</li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-pills"&gt;
+ &lt;li class="active"&gt;
+   &lt;a href="#"&gt;Home&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+				<h3>Disabled state</h3>
+				<p>For any nav component (tabs, pills, or list), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>. Links will remain clickable, however, unless you remove the <code>href</code> attribute. Alternatively, you could implement custom JavaScript to prevent those clicks.</p>
+				<div class="bs-doc-example">
+					<ul class="nav nav-pills">
+						<li>
+							<a href="#" title="">Home</a>
+						</li>
+						<li>
+							<a href="#" title="">Profile</a>
+						</li>
+						<li class="disabled">
+							<a href="#" title="">Messages</a>
+						</li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-pills"&gt;
+ ...
+ &lt;li class="disabled"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+ ...
+&lt;/ul&gt;
+</pre>
+				<h3>Component alignment</h3>
+				<p>To align nav links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
+
+
+				<hr />
+
+
+				<h2>Stackable</h2>
+				<p>As tabs and pills are horizontal by default, just add a second class, <code>.nav-stacked</code>, to make them appear vertically stacked.</p>
+
+				<h3>Stacked tabs</h3>
+				<div class="bs-doc-example">
+					<ul class="nav nav-tabs nav-stacked">
+						<li>
+							<a href="#" title="">Home</a>
+						</li>
+						<li>
+							<a href="#" title="">Profile</a>
+						</li>
+						<li class="disabled">
+							<a href="#" title="">Messages</a>
+						</li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-tabs nav-stacked"&gt;
+ ...
+&lt;/ul&gt;
+</pre>
+				<h3>Stacked pills</h3>
+				<div class="bs-doc-example">
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active">
+							<a href="#" title="">Home</a>
+						</li>
+						<li>
+							<a href="#" title="">Profile</a>
+						</li>
+						<li class="disabled">
+							<a href="#" title="">Messages</a>
+						</li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-pills nav-stacked"&gt;
+ ...
+&lt;/ul&gt;
+</pre>
+				<hr />
+
+				<h2>Dropdowns</h2>
+				<p>Add dropdown menus with a little extra HTML and the <a href="./javascript.html#dropdowns">dropdowns JavaScript plugin</a>.</p>
+
+				<h3>Tabs with dropdowns</h3>
+				<div class="bs-doc-example">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Help</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-tabs"&gt;
+ &lt;li class="dropdown"&gt;
+   &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+       Dropdown
+       &lt;b class="caret"&gt;&lt;/b&gt;
+     &lt;/a&gt;
+   &lt;ul class="dropdown-menu"&gt;
+     &lt;!-- links --&gt;
+   &lt;/ul&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+				<h3>Pills with dropdowns</h3>
+				<div class="bs-doc-example">
+					<ul class="nav nav-pills">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Help</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-pills"&gt;
+ &lt;li class="dropdown"&gt;
+   &lt;a class="dropdown-toggle"
+      data-toggle="dropdown"
+      href="#"&gt;
+       Dropdown
+       &lt;b class="caret"&gt;&lt;/b&gt;
+     &lt;/a&gt;
+   &lt;ul class="dropdown-menu"&gt;
+     &lt;!-- links --&gt;
+   &lt;/ul&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+				<hr />
+
+				<h2>Nav lists</h2>
+				<p>A simple and easy way to build groups of nav links with optional headers. They're best used in sidebars like the Finder in OS X.</p>
+				<div class="bs-doc-example" style="padding-left: 0; padding-right: 0;">
+					<ul class="nav nav-list">
+						<li class="nav-header">List header</li>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Library</a></li>
+						<li><a href="#">Applications</a></li>
+						<li class="nav-header">Another list header</li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Settings</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="nav nav-list"&gt;
+ &lt;li class="nav-header"&gt;List header&lt;/li&gt;
+ &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+ ...
+&lt;/ul&gt;
+</pre>
+
+				<p><span class="label label-info">Note</span> For nesting within a nav list, include <code>class="nav nav-list"</code> on any nested <code>&lt;ul&gt;</code>.</p>
+
+				<h3>Horizontal dividers</h3>
+				<p>Add a horizontal divider by creating an empty list item with the class <code>.divider</code>, like so:</p>
+
+				<hr />
+
+				<h2>Tabbable nav</h2>
+				<p>Bring your tabs to life with a simple plugin to toggle between content via tabs. Bootstrap integrates tabbable tabs in four styles: top (default), right, bottom, and left.</p>
+
+				<h3>Tabbable example</h3>
+				<p>To make tabs tabbable, create a <code>.tab-pane</code> with unique ID for every tab and wrap them in <code>.tab-content</code>.</p>
+				<div class="bs-doc-example">
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+							<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+							<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<p>I'm in Section 1.</p>
+							</div>
+							<div class="tab-pane" id="tab2">
+								<p>Howdy, I'm in Section 2.</p>
+							</div>
+							<div class="tab-pane" id="tab3">
+								<p>What up girl, this is Section 3.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="tabbable"&gt; &lt;!-- Only required for left/right tabs --&gt;
+ &lt;ul class="nav nav-tabs"&gt;
+   &lt;li class="active"&gt;&lt;a href="#tab1" data-toggle="tab"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#tab2" data-toggle="tab"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;div class="tab-content"&gt;
+   &lt;div class="tab-pane active" id="tab1"&gt;
+     &lt;p&gt;I'm in Section 1.&lt;/p&gt;
+   &lt;/div&gt;
+   &lt;div class="tab-pane" id="tab2"&gt;
+     &lt;p&gt;Howdy, I'm in Section 2.&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<h4>Fade in tabs</h4>
+				<p>To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>.</p>
+				<h4>Requires jQuery plugin</h4>
+				<p>All tabbable tabs are powered by our lightweight jQuery plugin. Read more about how to bring tabbable tabs to life <a href="./javascript.html#tabs">on the JavaScript docs page</a>.</p>
+
+				<h3>Tabblable in any direction</h3>
+				<h4>Tabs on the bottom</h4>
+				<p>Flip the order of the HTML and add a class to put tabs on the bottom.</p>
+				<div class="bs-doc-example">
+					<div class="tabbable tabs-below">
+						<div class="tab-content">
+							<div class="tab-pane" id="A">
+								<p>I'm in Section A.</p>
+							</div>
+							<div class="tab-pane active" id="B">
+								<p>Howdy, I'm in Section B.</p>
+							</div>
+							<div class="tab-pane" id="C">
+								<p>What up girl, this is Section C.</p>
+							</div>
+						</div>
+						<ul class="nav nav-tabs">
+							<li class=""><a href="#A" data-toggle="tab">Section 1</a></li>
+							<li class="active"><a href="#B" data-toggle="tab">Section 2</a></li>
+							<li><a href="#C" data-toggle="tab">Section 3</a></li>
+						</ul>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="tabbable tabs-below"&gt;
+ &lt;div class="tab-content"&gt;
+   ...
+ &lt;/div&gt;
+ &lt;ul class="nav nav-tabs"&gt;
+   ...
+ &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+				<h4>Tabs on the left</h4>
+				<p>Swap the class to put tabs on the left.</p>
+				<div class="bs-doc-example">
+					<div class="tabbable tabs-left">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#lA" data-toggle="tab">Section 1</a></li>
+							<li><a href="#lB" data-toggle="tab">Section 2</a></li>
+							<li><a href="#lC" data-toggle="tab">Section 3</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="lA">
+								<p>I'm in Section A.</p>
+							</div>
+							<div class="tab-pane" id="lB">
+								<p>Howdy, I'm in Section B.</p>
+							</div>
+							<div class="tab-pane" id="lC">
+								<p>What up girl, this is Section C.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="tabbable tabs-left"&gt;
+ &lt;ul class="nav nav-tabs"&gt;
+   ...
+ &lt;/ul&gt;
+ &lt;div class="tab-content"&gt;
+   ...
+ &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<h4>Tabs on the right</h4>
+				<p>Swap the class to put tabs on the right.</p>
+				<div class="bs-doc-example">
+					<div class="tabbable tabs-right">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#rA" data-toggle="tab">Section 1</a></li>
+							<li><a href="#rB" data-toggle="tab">Section 2</a></li>
+							<li><a href="#rC" data-toggle="tab">Section 3</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="rA">
+								<p>I'm in Section A.</p>
+							</div>
+							<div class="tab-pane" id="rB">
+								<p>Howdy, I'm in Section B.</p>
+							</div>
+							<div class="tab-pane" id="rC">
+								<p>What up girl, this is Section C.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="tabbable tabs-right"&gt;
+ &lt;ul class="nav nav-tabs"&gt;
+   ...
+ &lt;/ul&gt;
+ &lt;div class="tab-content"&gt;
+   ...
+ &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+			</section>
+
+
+			<!-- Navbar
+			================================================== -->
+			<section id="navbar" class="section-doc">
+				<header class="page-header">
+					<h1>Navbar <small>demo</small></h1>
+				</header>
+
+				<h2>Basic navbar</h2>
+				<p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
+				<div class="bs-doc-example">
+					<header class="navbar">
+						<div class="navbar-inner">
+							<a class="brand" href="#"><i class="icon-globe"></i> Project Title</a>
+							<ul class="nav">
+								<li class="active"><a href="#"><i class="icon-home"></i> Home</a></li>
+								<li><a href="#"><i class="icon-tag"></i> Link</a></li>
+								<li><a href="#"><i class="icon-book"></i> Link</a></li>
+								<li class="divider-vertical"></li>
+								<li><a href="#"><i class="icon-cogs"></i> Link</a></li>
+							</ul>
+						</div>
+					</header>
+				</div>
+<pre class="prettyprint linenums">
+&lt;header class="navbar"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;a class="brand" href="#"&gt;&lt;i class="icon-globe"&gt;&lt;/i&gt; Project Title&lt;/a&gt;
+    &lt;ul class="nav"&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;&lt;i class="icon-home"&gt;&lt;/i&gt; Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-tag"&gt;&lt;/i&gt; Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-book"&gt;&lt;/i&gt; Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider-vertical"&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-cogs"&gt;&lt;/i&gt; Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre>
+				<h2>Navbar components</h2>
+				<h3>Forms</h3>
+				<p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
+				<div class="bs-doc-example">
+					<header class="navbar">
+						<div class="navbar-inner">
+							<form class="navbar-form pull-left">
+								<input type="text" class="span2" placeholder="input here...">
+								<select name="select" class="span2">
+									<option value="">Item A</option>
+									<option value="">Item B</option>
+									<option value="">Item C</option>
+								</select>
+								<label class="checkbox inline">
+									<input type="checkbox" name="" value=""> Checkbox
+								</label>
+								<label class="radio inline">
+									<input type="radio" name="" value="" placeholder=""> Radiobutton
+								</label>
+								<div class="input-prepend">
+									<span class="add-on"><i class="icon-lock"></i></span>
+									<input type="password" class="span2" name="" value="" placeholder="Input password...">
+								</div>
+								<button type="submit" class="btn"><i class="icon-ok"></i></button>
+							</form>
+						</div>
+					</header>
+				</div>
+<pre class="prettyprint linenums">
+&lt;header class="navbar"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;form class="navbar-form pull-left"&gt;
+      &lt;input type="text" class="span2" placeholder="input here..." /&gt;
+      &lt;select name="select" class="span2"&gt;
+      ...
+      &lt;button type="submit" class="btn"&gt;&lt;i class="icon-ok"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre>
+				<h2>Search form</h2>
+				<p>For a more customized search form, add <code>.navbar-search</code> to the <code>form</code> and <code>.search-query</code> to the input for specialized styles in the navbar.</p>
+				<div class="bs-doc-example">
+					<header class="navbar">
+						<div class="navbar-inner">
+							<form class="navbar-search pull-left">
+								<input type="search" class="search-query" placeholder="Search...">
+							</form>
+						</div>
+					</header>
+				</div>
+<pre class="prettyprint linenums">
+&lt;header class="navbar"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;form class="navbar-search pull-left"&gt;
+      &lt;input type="search" class="search-query" placeholder="Search..." /&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre>
+
+			</section>
+
+
+			<section id="breadcrumbs" class="section-doc">
+				<header class="page-header">
+					<h1>Breadcrumbs <small>demo</small></h1>
+				</header>
+
+				<h2>Examples</h2>
+				<p>A single example shown as it might be displayed across multiple pages.</p>
+				<div class="bs-doc-example">
+					<ul class="breadcrumb">
+						<li class="active">Home</li>
+					</ul>
+					<ul class="breadcrumb">
+						<li><a href="#">Home</a> <span class="divider">/</span></li>
+						<li class="active">Library</li>
+					</ul>
+					<ul class="breadcrumb" style="margin-bottom: 5px;">
+						<li><a href="#">Home</a> <span class="divider">/</span></li>
+						<li><a href="#">Library</a> <span class="divider">/</span></li>
+						<li class="active">Data</li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="breadcrumb"&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
+ &lt;li class="active"&gt;Data&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+			</section>
+
+
+			<!-- Pagination
+			================================================== -->
+			<section id="pagination" class="section-doc">
+				<header class="page-header">
+					<h1>Pagination <small>Two options for paging through content</small></h1>
+				</header>
+
+				<h2>Standard pagination</h2>
+				<p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+				<div class="bs-doc-example">
+					<div class="pagination">
+						<ul>
+							<li><a href="#"><i class="icon-chevron-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-chevron-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Prev&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+				<hr />
+
+				<h2>Options</h2>
+
+				<h3>Disabled and active states</h3>
+				<p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
+				<div class="bs-doc-example">
+					<div class="pagination">
+						<ul>
+							<li class="disabled"><a href="#"><i class="icon-chevron-left"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-chevron-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination"&gt;
+ &lt;ul&gt;
+   &lt;li class="disabled"&gt;&lt;a href="#"&gt;Prev&lt;/a&gt;&lt;/li&gt;
+   &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+   ...
+ &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+				<h3>Sizes</h3>
+				<p>Fancy larger or smaller pagination? Add <code>.pagination-large</code>, <code>.pagination-small</code>, or <code>.pagination-mini</code> for additional sizes.</p>
+				<div class="bs-doc-example">
+					<div class="pagination pagination-large">
+						<ul>
+							<li><a href="#"><i class="icon-chevron-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-chevron-right"></i></a></li>
+						</ul>
+					</div>
+					<div class="pagination">
+						<ul>
+							<li><a href="#"><i class="icon-chevron-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-chevron-right"></i></a></li>
+						</ul>
+					</div>
+					<div class="pagination pagination-small">
+						<ul>
+							<li><a href="#"><i class="icon-chevron-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-chevron-right"></i></a></li>
+						</ul>
+					</div>
+					<div class="pagination pagination-mini">
+						<ul>
+							<li><a href="#"><i class="icon-chevron-left"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><i class="icon-chevron-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination pagination-large"&gt;
+ &lt;ul&gt;
+   ...
+ &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="pagination"&gt;
+ &lt;ul&gt;
+   ...
+ &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="pagination pagination-small"&gt;
+ &lt;ul&gt;
+   ...
+ &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="pagination pagination-mini"&gt;
+ &lt;ul&gt;
+   ...
+ &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+				<hr />
+
+				<h2>Pager</h2>
+				<p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
+
+				<h3>Default example</h3>
+				<p>By default, the pager centers links.</p>
+				<div class="bs-doc-example">
+					<ul class="pager">
+						<li><a href="#"><i class="icon-chevron-left"></i></a></li>
+						<li><a href="#"><i class="icon-chevron-right"></i></a></li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="pager"&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+				<h3>Aligned links</h3>
+				<p>Alternatively, you can align each link to the sides:</p>
+				<div class="bs-doc-example">
+					<ul class="pager">
+						<li class="previous"><a href="#"><i class="icon-chevron-left"></i> Older</a></li>
+						<li class="next"><a href="#">Newer <i class="icon-chevron-right"></i></a></li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="pager"&gt;
+ &lt;li class="previous"&gt;
+   &lt;a href="#"&gt;Older&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li class="next"&gt;
+   &lt;a href="#"&gt;Newer&lt;/a&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+				<h3>Optional disabled state</h3>
+				<p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
+				<div class="bs-doc-example">
+					<ul class="pager">
+						<li class="previous disabled"><a href="#"><i class="icon-chevron-left"></i> Older</a></li>
+						<li class="next"><a href="#">Newer <i class="icon-chevron-right"></i></a></li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="pager"&gt;
+ &lt;li class="previous disabled"&gt;
+   &lt;a href="#"&gt;Older&lt;/a&gt;
+ &lt;/li&gt;
+ ...
+&lt;/ul&gt;
+</pre>
+			</section>
+
+
+			<!-- Labels
+			================================================== -->
+			<section id="labels" class="section-doc">
+				<header class="page-header">
+					<h1>Labels and badges</h1>
+				</header>
+
+				<h3>Labels</h3>
+				<table class="table table-striped table-responsive">
+					<thead>
+						<tr>
+							<th>Labels</th>
+							<th>Markup</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="label">Default</span></td>
+							<td><code>&lt;span class="label"&gt;Default&lt;/span&gt;</code></td>
+						</tr>
+						<tr>
+							<td><span class="label label-success">Success</span></td>
+							<td><code>&lt;span class="label label-success"&gt;Success&lt;/span&gt;</code></td>
+						</tr>
+						<tr>
+							<td><span class="label label-warning">Warning</span></td>
+							<td><code>&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;</code></td>
+						</tr>
+						<tr>
+							<td><span class="label label-important">Important</span></td>
+							<td><code>&lt;span class="label label-important"&gt;Important&lt;/span&gt;</code></td>
+						</tr>
+						<tr>
+							<td><span class="label label-info">Info</span></td>
+							<td><code>&lt;span class="label label-info"&gt;Info&lt;/span&gt;</code></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Easily collapsible</h3>
+				<p>For easy implementation, labels and badges will simply collapse (via CSS's <code>:empty</code> selector) when no content exists within.</p>
+
+			</section>
+
+
+			<!-- Typography
+			================================================== -->
+			<section id="typography" class="section-doc">
+				<header class="page-header">
+					<h1>Typographic components <small>demo</small></h1>
+				</header>
+				<h2>Hero unit</h2>
+				<p>A lightweight, flexible component to showcase key content on your site. It works well on marketing and content-heavy sites.</p>
+
+				<div class="bs-doc-example">
+					<div class="hero-unit">
+						<h1>Hello, bootstrap!</h1>
+						<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+						<a class="btn btn-primary btn-large">Learn more</a>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="hero-unit"&gt;
+ &lt;h1&gt;Heading&lt;/h1&gt;
+ &lt;p&gt;Tagline&lt;/p&gt;
+ &lt;p&gt;
+   &lt;a class="btn btn-primary btn-large"&gt;
+     Learn more...
+   &lt;/a&gt;
+ &lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+				<h2>Page header</h2>
+				<p>A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code>, element as well most other components (with additional styles).</p>
+				<div class="bs-doc-example">
+					<header class="page-header">
+						<h1>Example page header <small>Subtext for header</small></h1>
+					</header>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="page-header"&gt;
+ &lt;h1&gt;Example page header &lt;small&gt;Subtext for header&lt;/small&gt;&lt;/h1&gt;
+&lt;/div&gt;
+</pre>
+
+			</section>
+
+
+			<!-- Thumbnails
+			================================================== -->
+			<section id="thumbnails" class="section-doc">
+				<header class="page-header">
+					<h1>Thumbnails <small>grids of images, videos, text, and more</small></h1>
+				</header>
+				<h2>Default thumbnails</h2>
+				<p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
+				<ul class="thumbnails">
+					<li>
+						<a href="#" class="thumbnail">
+							<img src="img/img1.jpg" height="auto" width="220" alt="img1" />
+						</a>
+					</li>
+					<li>
+						<a href="#" class="thumbnail">
+							<img src="img/img2.jpg" height="auto" width="220" alt="img2" />
+						</a>
+					</li>
+					<li>
+						<a href="#" class="thumbnail">
+							<img src="img/img3.jpg" height="auto" width="220" alt="img3" />
+						</a>
+					</li>
+					<li>
+						<a href="#" class="thumbnail">
+							<img src="img/img4.jpg" height="auto" width="220" alt="img4" />
+						</a>
+					</li>
+				</ul>
+
+				<h3>Why use thumbnails</h3>
+				<p>Thumbnails (previously <code>.media-grid</code> up until v1.4) are great for grids of photos or videos, image search results, retail products, portfolios, and much more. They can be links or static content.</p>
+
+				<h3>Simple, flexible markup</h3>
+				<p>Thumbnail markup is simple—a <code>ul</code> with any number of <code>li</code> elements is all that is required. It's also super flexible, allowing for any type of content with just a bit more markup to wrap your contents.</p>
+
+				<h3>Uses grid column sizes</h3>
+				<p>Lastly, the thumbnails component uses existing grid system classes—like <code>.span2</code> or <code>.span3</code>—for control of thumbnail dimensions.</p>
+
+				<h2>Markup</h2>
+				<p>As mentioned previously, the required markup for thumbnails is light and straightforward. Here's a look at the default setup <strong>for linked images</strong>:</p>
+<pre class="prettyprint linenums">
+&lt;ul class="thumbnails"&gt;
+  &lt;li&gt;
+    &lt;a href="#" class="thumbnail"&gt;
+      &lt;img src="img/img1.jpg" alt="img1" /&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+				<h2>More examples</h2>
+				<p>Explore all your options with the various grid classes available to you. You can also mix and match different sizes.</p>
+				<ul class="thumbnails">
+					<li class="span6">
+						<a href="#" class="thumbnail">
+							<img src="img/img1.jpg" height="auto" width="100%" alt="img1" />
+						</a>
+					</li>
+					<li class="span3">
+					<a href="#" class="thumbnail">
+						<img src="img/img2.jpg" height="auto" width="100%" alt="img1" />
+					</a>
+					</li>
+					<li class="span3">
+						<a href="#" class="thumbnail">
+							<img src="img/img3.jpg" height="auto" width="100%" alt="img1" />
+						</a>
+					</li>
+					<li class="span3">
+						<a href="#" class="thumbnail">
+							<img src="img/img4.jpg" height="auto" width="100%" alt="img1" />
+						</a>
+					</li>
+					<li class="span3">
+						<a href="#" class="thumbnail">
+							<img src="img/img1.jpg" height="auto" width="100%" alt="img1" />
+						</a>
+					</li>
+				</ul>
+			</section>
+
+
+			<!-- Alerts
+			================================================== -->
+			<section id="alerts" class="section-doc">
+				<header class="page-header">
+					<h1>Alerts <small>Styles for success, warning, and error messages</small></h1>
+				</header>
+
+				<h2>Default alert</h2>
+				<p>Wrap any text and an optional dismiss button in <code>.alert</code> for a basic warning alert message.</p>
+				<div class="bs-doc-example">
+					<div class="alert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						<strong>Warning!</strong> Best check yo self, you're not looking too good.
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="alert"&gt;
+ &lt;button type="button" class="close" data-dismiss="alert"&gt;&lt;/button&gt;
+ &lt;strong&gt;Warning!&lt;/strong&gt; Best check yo self, you're not looking too good.
+&lt;/div&gt;
+</pre>
+
+				<h3>Dismiss buttons</h3>
+				<p>Mobile Safari and Mobile Opera browsers, in addition to the <code>data-dismiss="alert"</code> attribute, require an <code>href="#"</code> for the dismissal of alerts when using an <code>&lt;a&gt;</code> tag.</p>
+				<pre class="prettyprint linenums">&lt;a href="#" class="close" data-dismiss="alert"&gt;&lt;/a&gt;</pre>
+				<p>Alternatively, you may use a <code>&lt;button&gt;</code> element with the data attribute, which we have opted to do for our docs. When using <code>&lt;button&gt;</code>, you must include <code>type="button"</code> or your forms may not submit.</p>
+				<pre class="prettyprint linenums">&lt;button type="button" class="close" data-dismiss="alert"&gt;&lt;/button&gt;</pre>
+
+				<h3>Dismiss alerts via JavaScript</h3>
+				<p>Use the <a href="./javascript.html#alerts">alerts jQuery plugin</a> for quick and easy dismissal of alerts.</p>
+
+				<hr />
+
+				<h2>Options</h2>
+				<p>For longer messages, increase the padding on the top and bottom of the alert wrapper by adding <code>.alert-block</code>.</p>
+
+				<div class="bs-doc-example">
+					<div class="alert alert-block">
+						<button type="button" class="close" data-dismiss="alert">×</button>
+						<h4>Warning!</h4>
+						<p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="alert alert-block"&gt;
+ &lt;button type="button" class="close" data-dismiss="alert"&gt;&lt;/button&gt;
+ &lt;h4&gt;Warning!&lt;/h4&gt;
+ Best check yo self, you're not...
+&lt;/div&gt;
+</pre>
+
+				<hr />
+
+				<h2>Contextual alternatives</h2>
+				<p>Add optional classes to change an alert's connotation.</p>
+				<h3>Error or danger</h3>
+
+				<div class="bs-doc-example">
+					<div class="alert alert-error">
+						<button type="button" class="close" data-dismiss="alert">×</button>
+						<strong>Oh snap!</strong> Change a few things up and try submitting again.
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="alert alert-error"&gt;
+ ...
+&lt;/div&gt;
+</pre>
+
+				<h3>Success</h3>
+
+				<div class="bs-doc-example">
+					<div class="alert alert-success">
+						<button type="button" class="close" data-dismiss="alert">×</button>
+						<strong>Well done!</strong> You successfully read this important alert message.
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="alert alert-success"&gt;
+ ...
+&lt;/div&gt;
+</pre>
+
+				<h3>Information</h3>
+
+				<div class="bs-doc-example">
+					<div class="alert alert-info">
+						<button type="button" class="close" data-dismiss="alert">×</button>
+						<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="alert alert-info"&gt;
+ ...
+&lt;/div&gt;
+</pre>
+
+			</section>
+
+
+			<!-- Progress bars
+			================================================== -->
+			<section id="progress" class="section-doc">
+				<header class="page-header">
+					<h1>Progress bars <small>For loading, redirecting, or action status</small></h1>
+				</header>
+				<h2>Examples and markup</h2>
+				<h3>Basic</h3>
+				<p>Default progress bar with a vertical gradient.</p>
+				<div class="bs-doc-example">
+					<div class="progress">
+						<div class="bar" style="width: 60%;"></div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="progress"&gt;
+ &lt;div class="bar" style="width: 60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<h3>Indeterminate</h3>
+				<p>Use this style for tasks that are not determinate that are non-modal (don't block user interaction).</p>
+				<div class="bs-doc-example">
+					<div class="progress progress-indeterminate">
+						<div class="bar"></div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="progress progress-indeterminate"&gt;
+ &lt;div class="bar"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<h3>Indeterminate Ring</h3>
+				<p>Use this style for tasks that are not determinate that are non-modal (don't block user interaction).</p>
+				<div class="bs-doc-example">
+					<div class="progress progress-indeterminate">
+						<div class="pulse"></div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="progress progress-indeterminate"&gt;
+ &lt;div class="pulse"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<h3>Stacked</h3>
+				<p>Place multiple bars into the same <code>.progress</code> to stack them.</p>
+				<div class="bs-doc-example">
+					<div class="progress">
+						<div class="bar bar-success" style="width: 35%;"></div>
+						<div class="bar bar-warning" style="width: 20%;"></div>
+						<div class="bar bar-danger" style="width: 10%;"></div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="progress"&gt;
+ &lt;div class="bar bar-success" style="width: 35%;"&gt;&lt;/div&gt;
+ &lt;div class="bar bar-warning" style="width: 20%;"&gt;&lt;/div&gt;
+ &lt;div class="bar bar-danger" style="width: 10%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<hr />
+
+				<h2>Options</h2>
+				<h3>Additional colors</h3>
+				<p>Progress bars use some of the same button and alert classes for consistent styles.</p>
+				<div class="bs-doc-example">
+					<div class="progress progress-info">
+						<div class="bar" style="width: 20%"></div>
+					</div>
+					<div class="progress progress-success">
+						<div class="bar" style="width: 40%"></div>
+					</div>
+					<div class="progress progress-warning">
+						<div class="bar" style="width: 60%"></div>
+					</div>
+					<div class="progress progress-danger">
+						<div class="bar" style="width: 80%"></div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="progress progress-info"&gt;
+ &lt;div class="bar" style="width: 20%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-success"&gt;
+ &lt;div class="bar" style="width: 40%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-warning"&gt;
+ &lt;div class="bar" style="width: 60%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-danger"&gt;
+ &lt;div class="bar" style="width: 80%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<hr />
+
+				<h2>Browser support</h2>
+				<p>Progress bars use CSS3 gradients, transitions, and animations to achieve all their effects. These features are not supported in IE7-9 or older versions of Firefox.</p>
+				<p>Versions earlier than Internet Explorer 10 and Opera 12 do not support animations.</p>
+			</section>
+
+
+			<!-- Media object
+			================================================== -->
+			<section id="media" class="section-doc">
+				<header class="page-header">
+					<h1>Media object</h1>
+				</header>
+				<p class="lead">Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.</p>
+
+				<h2>Default example</h2>
+				<p>The default media allow to float a media object (images, video, audio) to the left or right of a content block.</p>
+
+				<div class="bs-doc-example">
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="../../common/img/myLogo.jpg" height="auto" width="64" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Media heading</h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+						</div>
+					</div>
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="../../common/img/myLogo.jpg" height="auto" width="64" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Media heading</h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							<div class="media">
+								<a class="pull-left" href="#">
+									<img class="media-object" src="../../common/img/myLogo.jpg" height="auto" width="64" />
+								</a>
+								<div class="media-body">
+									<h4 class="media-heading">Media heading</h4>
+									Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<pre class="prettyprint linenums">
+&lt;div class="media"&gt;
+ &lt;a class="pull-left" href="#"&gt;
+   &lt;img class="media-object" src="http://placehold.it/64x64"&gt;
+ &lt;/a&gt;
+ &lt;div class="media-body"&gt;
+   &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+   ...
+
+   &lt;!-- Nested media object --&gt;
+   &lt;div class="media"&gt;
+     ...
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<hr />
+
+				<h2>Media list</h2>
+				<p>With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).</p>
+				<div class="bs-doc-example">
+					<ul class="media-list">
+						<li class="media">
+							<a class="pull-left" href="#">
+								<img class="media-object" src="../../common/img/myLogo.jpg" height="auto" width="64" />
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+								<!-- Nested media object -->
+								<div class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object" src="../../common/img/myLogo.jpg" height="auto" width="64" />
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">Nested media heading</h4>
+										Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+										<!-- Nested media object -->
+										<div class="media">
+											<a class="pull-left" href="#">
+												<img class="media-object" src="../../common/img/myLogo.jpg" height="auto" width="64" />
+											</a>
+											<div class="media-body">
+												<h4 class="media-heading">Nested media heading</h4>
+												Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Nested media object -->
+								<div class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object" src="../../common/img/myLogo.jpg" height="auto" width="64" />
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">Nested media heading</h4>
+										Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="media">
+							<a class="pull-right" href="#">
+								<img class="media-object" src="../../common/img/myLogo.jpg" height="auto" width="64" />
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+							</div>
+						</li>
+					</ul>
+				</div>
+<pre class="prettyprint linenums">
+&lt;ul class="media-list"&gt;
+ &lt;li class="media"&gt;
+   &lt;a class="pull-left" href="#"&gt;
+     &lt;img class="media-object" src="http://placehold.it/64x64"&gt;
+   &lt;/a&gt;
+   &lt;div class="media-body"&gt;
+     &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+     ...
+
+     &lt;!-- Nested media object --&gt;
+     &lt;div class="media"&gt;
+       ...
+    &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+			</section>
+
+
+		</section>
+	</div>
+
+
+	<footer id="footer" class="footer">
+		<ul class="nav nav-pills">
+			<li><a href="http://dev.classmethod.jp/author/yamada-naoki/" title="山田直樹 | Developers.IO"><i class="icon-pencil"></i> Blog</a></li>
+			<li><a href="https://www.facebook.com/wakamsha" title="山田直樹 | facebook"><i class="icon-facebook"></i> facebook</a></li>
+			<li><a href="https://github.com/wakamsha" title="wakamsha"><i class="icon-github"></i> Github</a></li>
+		</ul>
+		<p>Made by <strong>WAKAMSHA</strong>. Contact him <a href="mailto:wakamsha@gmail.com">wakamsha@gmail.com</a>.</p>
+		<p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+		<p>Based on <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>. Hosted on <a href="http://pages.github.com/">GitHub</a>. Icons from <a href="http://aristeides.com/elusive-iconfont/">Elusive Icons</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>.<p></p>
+	</footer>
+
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
+	<script src="js/application.js"></script>
+</body>
+</html>

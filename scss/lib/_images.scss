@@ -1,0 +1,124 @@
+//
+// Images
+// --------------------------------------------------
+
+
+// Image container
+// --------------------
+.image-container {
+  background-color: $eddieGrayNavy;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 5px 5px 60px;
+  position: relative;
+  @include border-radius($baseBorderRadius);
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.accent {
+    background-color: $eddieOrange;
+  }
+  &.light {
+    background-color: $eddieGrayLight;
+    .overlay {
+      color: $textColor;
+    }
+  }
+  img {
+    @include border-radius($baseBorderRadius);
+  }
+  .overlay {
+    bottom: 0;
+    color: white;
+    font-size: $baseFontSize - 2;
+    height: 50px;
+    left: 0;
+    margin-right: 5px;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+// Image collection
+// --------------------
+.image-collection {
+  list-style: none;
+  margin-left: 0;
+  position: relative;
+  &:after,
+  &:before {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+  > div,
+  > li {
+    background: $eddieGrayLight;
+    float: left;
+    height: 120px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 220px;
+    @include border-radius($baseBorderRadius);
+    @include box-sizing(border-box);
+    &:before {
+      color: $eddieGray;
+      content: "\e060";
+      display: block;
+      font-family: $iconWebfont;
+      position: absolute;
+      font-size: $baseFontSize * 3;
+      top: 50%;
+      left: 50%;
+      margin-left: -20px;
+      margin-top: -7px;
+      z-index: 0;
+    }
+    > img {
+      height: auto;
+      position: relative;
+      width: 100%;
+    }
+    &.selected {
+      @include selected() {
+        border: 4px solid;
+      }
+    }
+    .info-text,
+    .overlay {
+      background: $eddieGrayDark;
+      color: $white;
+      font-size: $baseFontSize - 4;
+      opacity: .8;
+      position: absolute;
+    }
+    .info-text {
+      left: 0;
+      padding: 0 5px;
+      top: 0;
+    }
+    .overlay {
+      bottom: -55px;
+      @include box-sizing(border-box);
+      height: 55px;
+      padding: 5px;
+      @include transition(.2s);
+      width: 100%;
+    }
+    &:hover {
+      .overlay {
+        bottom: 0;
+      }
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}

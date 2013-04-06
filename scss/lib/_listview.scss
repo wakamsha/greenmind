@@ -1,0 +1,87 @@
+//
+// List view
+// --------------------------------------------------
+
+.listview {
+  list-style: none;
+  margin-left: 0;
+
+  li {
+    border: 4px solid transparent;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    width: $listviewWidth;
+    @include transition(.1s);
+
+    &:hover {
+      outline: 2px solid $listviewHover;
+    }
+    &:active {
+      outline: 2px solid $listviewActive;
+    }
+
+    &.accent {
+      background-color: $listviewAccentBackground;
+      color: $white;
+    }
+    &.light {
+      background-color: $listviewLightBackground;
+    }
+
+    &.selected {
+      @include selected;
+    }
+
+    .icon {
+      float: left;
+      font-size: $listviewIconSize;
+      height: $listviewIconSize;
+      line-height: $listviewIconSize;
+      width: $listviewIconSize;
+      [class^="icon-"],
+      [class*=" icon-"] {
+        width: 100%;
+        &:before {
+          top: 0;
+        }
+      }
+    }
+    .data {
+      margin-left: $listviewIconSize + 10px;
+      h4 {
+        font-size: $baseFontSize + 1;
+        margin: 0;
+      }
+      p {
+        font-size: $baseFontSize - 2;
+      }
+    }
+  }
+
+  &.fluid {
+    @include clearfix;
+    li {
+      float: left;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &.iconic {
+    .icon {
+      font-size: $listviewIconSizeSmall;
+      height: $listviewIconSizeSmall;
+      line-height: $listviewIconSizeSmall;
+      width: $listviewIconSizeSmall;
+    }
+    .data {
+      margin-left: $listviewIconSizeSmall + 10px;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Images</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="content/font/elusive-icons/css/elusive-webfont.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lte IE 8]><script src="/wp-content/themes/html5.theme/common/js/html5.js" type="text/javascript"></script><![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"><i class="icon-list"></i></button>
+				<a href="index.html" title="Green mind | Bootstrap" class="brand"><i class="icon-leaf"></i> Green mind</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav nav-pills pull-right">
+						<li><a href="#" title="Sign in"><i class="icon-white icon-off"></i> Sign in</a></li>
+						<li class="dropdown">
+							<a href="#" title="Settings" data-toggle="dropdown"><i class="icon-cog icon-white"></i> Settings</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting item A</a></li>
+								<li><a href="#">Setting item B</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="Settings" data-toggle="dropdown"><i class="icon-white icon-user"></i> Naoki Yamda</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">Other item</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header class="jumbotron">
+		<div class="jumbotron-inner">
+			<h1>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="">Images <i class="caret icon-chevron-down"></i></a>
+				<ul class="dropdown-menu">
+					<li><a tabindex="-1" href="listview.html">List views</a></li>
+					<li><a tabindex="-1" href="tables.html">Responsive tables</a></li>
+					<li><a tabindex="-1" href="images.html">Images</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="scaffolding.html">Bootstrap Scaffolding</a></li>
+					<li><a tabindex="-1" href="base-css.html">Bootstrap Base CSS</a></li>
+					<li><a tabindex="-1" href="components.html">Bootstrap Components</a></li>
+					<li><a tabindex="-1" href="javascript.html">Bootstrap JavaDcript</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="index.html">Home</a></li>
+				</ul>
+			</h1>
+			<p class="lead"><i class="icon-ok-sign"></i> Show image container, collection.</p>
+		</div>
+	</header>
+
+	<section class="page-content">
+		<section id="images" class="section-doc">
+			<header class="page-header">
+				<h1>Images <small>demo</small></h1>
+			</header>
+
+			<h2>Image container</h2>
+			<div class="bs-doc-example">
+				<div class="image-container">
+					<img src="img/img1.jpg" height="auto" width="300" alt="img1">
+					<div class="overlay">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+				</div>
+				<div class="image-container accent">
+					<img src="img/img2.jpg" height="auto" width="300" alt="img2">
+					<div class="overlay">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+				</div>
+				<div class="image-container light">
+					<img src="img/img3.jpg" height="auto" width="300" alt="img3">
+					<div class="overlay">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;div class="image-container"&gt;
+  &lt;img src="img/img1.jpg" alt="img1"&gt;
+  &lt;div class="overlay"&gt;Lorem Ipsum is ...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="image-container accent"&gt;
+  &lt;img src="img/img2.jpg" alt="img2"&gt;
+  &lt;div class="overlay"&gt;Lorem Ipsum is ...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="image-container light"&gt;
+  &lt;img src="img/img3.jpg" alt="img3"&gt;
+  &lt;div class="overlay"&gt;Lorem Ipsum is ...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+			<h2>Image collection</h2>
+			<div class="bs-doc-example">
+				<div class="image-collection">
+					<div class="selected">
+						<img src="img/img1.jpg" alt="img1">
+					</div>
+					<div class="">
+						<img src="img/img2.jpg" alt="img2">
+						<span class="info-text">Lorem Ipsum is simply</span>
+						<div class="overlay">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+					</div>
+					<div class="">
+						<img src="img/img3.jpg" alt="img3">
+					</div>
+					<div class=""></div>
+				</div>
+			</div>
+<pre class="prettyprint linenums">
+&lt;div class="image-collection"&gt;
+  &lt;div class="selected"&gt;
+    &lt;img src="img/img1.jpg" alt="img1"&gt;
+  &lt;/div&gt;
+  &lt;div class=""&gt;
+    &lt;img src="img/img2.jpg" alt="img2"&gt;
+    &lt;span class="info-text"&gt;Lorem Ipsum is simply&lt;/span&gt;
+    &lt;div class="overlay"&gt;Lorem Ipsum is ...&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=""&gt;
+    &lt;img src="img/img3.jpg" alt="img3"&gt;
+  &lt;/div&gt;
+  &lt;div class=""&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</section>
+
+
+	</section>
+
+
+	<footer id="footer" class="footer">
+		<ul class="nav nav-pills">
+			<li><a href="http://dev.classmethod.jp/author/yamada-naoki/" title="山田直樹 | Developers.IO"><i class="icon-pencil"></i> Blog</a></li>
+			<li><a href="https://www.facebook.com/wakamsha" title="山田直樹 | facebook"><i class="icon-facebook"></i> facebook</a></li>
+			<li><a href="https://github.com/wakamsha" title="wakamsha"><i class="icon-github"></i> Github</a></li>
+		</ul>
+		<p>Made by <strong>WAKAMSHA</strong>. Contact him <a href="mailto:wakamsha@gmail.com">wakamsha@gmail.com</a>.</p>
+		<p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+		<p>Based on <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>. Hosted on <a href="http://pages.github.com/">GitHub</a>. Icons from <a href="http://aristeides.com/elusive-iconfont/">Elusive Icons</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>.<p></p>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
+	<script src="js/application.js"></script>
+</body>
+</html>

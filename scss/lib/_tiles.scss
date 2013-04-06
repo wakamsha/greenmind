@@ -1,0 +1,54 @@
+//
+// Tiles
+// --------------------------------------------------
+
+$tileIconSize:      80px;
+$tileIconMargin:    $tileIconSize + 10;
+
+.tiles {
+
+	.tile {
+		display: block;
+		margin-bottom: 20px;
+		outline: none;
+		padding: 10px;
+		text-decoration: none;
+		@include clearfix;
+
+		&:hover {
+			outline: 2px solid $eddieGrayNavy;
+		}
+
+		&.accent {
+			background: $eddieOrange;
+			color: $white;
+		}
+
+		&.light {
+			background: $eddieGrayPale;
+		}
+
+		.icon {
+			display: block;
+			float: left;
+			height: $tileIconSize;
+			width: $tileIconSize;
+			[class^="icon-"],
+			[class*=" icon-"] {
+				&:before {
+					line-height: 1em;
+					font-size: $tileIconSize;
+					top: 0;
+				}
+			}
+		}
+
+		.data {
+			margin-left: $tileIconMargin;
+			h4 {
+				font-size: $baseFontSize * 2;
+				line-height: 1.2em;
+			}
+		}
+	}
+}

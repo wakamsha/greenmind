@@ -1,0 +1,65 @@
+//
+// Responsive: Tiles
+// --------------------------------------------------
+
+$tabletTileIconSize:      72px;
+$tabletTileIconMargin:    $tabletTileIconSize + 10;
+
+$phoneTileIconSize:      64px;
+$phoneTileIconMargin:    $phoneTileIconSize + 10;
+
+
+// Tablet to desktop
+// -------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.tiles {
+		.tile {
+
+			.icon {
+				height: $tabletTileIconSize;
+				width: $tabletTileIconSize;
+				[class^="icon-"],
+				[class*=" icon-"] {
+					&:before {
+						font-size: $tabletTileIconSize;
+					}
+				}
+			}
+
+			.data {
+				margin-left: $tabletTileIconMargin;
+				h4 {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+// Phone
+// -------------------------
+@media (max-width: 480px) {
+
+	.tiles {
+		.tile {
+
+			.icon {
+				height: $phoneTileIconSize;
+				width: $phoneTileIconSize;
+				[class^="icon-"],
+				[class*=" icon-"] {
+					&:before {
+						font-size: $phoneTileIconSize;
+					}
+				}
+			}
+
+			.data {
+				margin-left: $phoneTileIconMargin;
+				h4 {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>List view</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="content/font/elusive-icons/css/elusive-webfont.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lte IE 8]><script src="/wp-content/themes/html5.theme/common/js/html5.js" type="text/javascript"></script><![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"><i class="icon-list"></i></button>
+				<a href="index.html" title="Green mind | Bootstrap" class="brand"><i class="icon-leaf"></i> Green mind </a>
+				<div class="nav-collapse collapse">
+					<ul class="nav nav-pills pull-right">
+						<li><a href="#" title="Sign in"><i class="icon-white icon-off"></i> Sign in</a></li>
+						<li class="dropdown">
+							<a href="#" title="Settings" data-toggle="dropdown"><i class="icon-cog icon-white"></i> Settings</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting item A</a></li>
+								<li><a href="#">Setting item B</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" title="Settings" data-toggle="dropdown"><i class="icon-white icon-user"></i> Naoki Yamda</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">Other item</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header class="jumbotron">
+		<div class="jumbotron-inner">
+			<h1>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="">List views <i class="caret icon-chevron-down"></i></a>
+				<ul class="dropdown-menu">
+					<li><a tabindex="-1" href="listview.html">List views</a></li>
+					<li><a tabindex="-1" href="tables.html">Responsive tables</a></li>
+					<li><a tabindex="-1" href="images.html">Images</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="scaffolding.html">Bootstrap Scaffolding</a></li>
+					<li><a tabindex="-1" href="base-css.html">Bootstrap Base CSS</a></li>
+					<li><a tabindex="-1" href="components.html">Bootstrap Components</a></li>
+					<li><a tabindex="-1" href="javascript.html">Bootstrap JavaDcript</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="index.html">Home</a></li>
+				</ul>
+			</h1>
+			<p class="lead"><i class="icon-ok-sign"></i> Show selectable lists of elements.</p>
+		</div>
+	</header>
+
+	<section class="page-content">
+		<section id="listViews">
+			<header class="page-header">
+				<h1>List views <small>demo</small></h1>
+			</header>
+			<h2>Default List view</h2>
+			<p>Basic sample for simple ListView.</p>
+			<div class="bs-doc-example">
+				<ul class="listview">
+					<li>
+						<div class="icon">
+							<i class="icon-facebook"></i>
+						</div>
+						<div class="data">
+							<h4>facebook</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+					<li class="selected">
+						<div class="icon">
+							<i class="icon-twitter"></i>
+						</div>
+						<div class="data">
+							<h4>Twitter</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+					<li class="accent">
+						<div class="icon">
+							<i class="icon-googleplus"></i>
+						</div>
+						<div class="data">
+							<h4>Google +</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+					<li class="light">
+						<div class="icon">
+							<i class="icon-slideshare"></i>
+						</div>
+						<div class="data">
+							<h4>Slideshare</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+<pre class="prettyprint linenums">
+&lt;ul class="listview"&gt;
+  &lt;li&gt;
+    &lt;div class="icon"&gt;
+      &lt;!-- Image or icon --&gt;
+    &lt;/div&gt;
+    &lt;div class="data"&gt;
+      &lt;h4&gt;Slideshare&lt;/h4&gt;
+      &lt;p&gt;Lorem ipsum sin ut dolorem&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class="selected"&gt;
+    &lt;div class="icon"&gt;
+      &lt;!-- Image or icon --&gt;
+    &lt;/div&gt;
+    &lt;div class="data"&gt;
+      &lt;h4&gt;Slideshare&lt;/h4&gt;
+      &lt;p&gt;Lorem ipsum sin ut dolorem&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class="accent"&gt;
+    &lt;div class="icon"&gt;
+      &lt;!-- Image or icon --&gt;
+    &lt;/div&gt;
+    &lt;div class="data"&gt;
+      &lt;h4&gt;Slideshare&lt;/h4&gt;
+      &lt;p&gt;Lorem ipsum sin ut dolorem&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class="light"&gt;
+    &lt;div class="icon"&gt;
+      &lt;!-- Image or icon --&gt;
+    &lt;/div&gt;
+    &lt;div class="data"&gt;
+      &lt;h4&gt;Slideshare&lt;/h4&gt;
+      &lt;p&gt;Lorem ipsum sin ut dolorem&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+			<h2>List view Fluid</h2>
+			<div class="bs-doc-example">
+				<ul class="listview fluid">
+					<li>
+						<div class="icon">
+							<i class="icon-facebook"></i>
+						</div>
+						<div class="data">
+							<h4>facebook</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+					<li class="selected">
+						<div class="icon">
+							<i class="icon-twitter"></i>
+						</div>
+						<div class="data">
+							<h4>Twitter</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+					<li class="accent">
+						<div class="icon">
+							<i class="icon-googleplus"></i>
+						</div>
+						<div class="data">
+							<h4>Google +</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+					<li class="light">
+						<div class="icon">
+							<i class="icon-slideshare"></i>
+						</div>
+						<div class="data">
+							<h4>Slideshare</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+<pre class="prettyprint linenums">
+&lt;ul class="listview fluid"&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+			<h2>List view Iconic</h2>
+			<div class="bs-doc-example">
+				<ul class="listview iconic">
+					<li>
+						<div class="icon">
+							<i class="icon-youtube"></i>
+						</div>
+						<div class="data">
+							<h4>Youtube</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<i class="icon-picasa"></i>
+						</div>
+						<div class="data">
+							<h4>Picasa</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<i class="icon-foursquare"></i>
+						</div>
+						<div class="data">
+							<h4>Foursquare</h4>
+							<p>Lorem ipsum sin ut dolorem</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+<pre class="prettyprint linenums">
+&lt;ul class="listview iconic"&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+
+		</section>
+
+
+	</section>
+
+	<footer id="footer" class="footer">
+		<ul class="nav nav-pills">
+			<li><a href="http://dev.classmethod.jp/author/yamada-naoki/" title="山田直樹 | Developers.IO"><i class="icon-pencil"></i> Blog</a></li>
+			<li><a href="https://www.facebook.com/wakamsha" title="山田直樹 | facebook"><i class="icon-facebook"></i> facebook</a></li>
+			<li><a href="https://github.com/wakamsha" title="wakamsha"><i class="icon-github"></i> Github</a></li>
+		</ul>
+		<p>Made by <strong>WAKAMSHA</strong>. Contact him <a href="mailto:wakamsha@gmail.com">wakamsha@gmail.com</a>.</p>
+		<p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+		<p>Based on <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>. Hosted on <a href="http://pages.github.com/">GitHub</a>. Icons from <a href="http://aristeides.com/elusive-iconfont/">Elusive Icons</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>.<p></p>
+	</footer>
+
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
+	<script src="js/application.js"></script>
+</body>
+</html>
